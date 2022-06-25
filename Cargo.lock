@@ -2627,8 +2627,18 @@ name = "magnum-opus"
 version = "0.4.0"
 source = "git+https://github.com/open-trade/magnum-opus#3c3d0b86ae95c84930bebffe4bcb03b3bd83342b"
 dependencies = [
- "bindgen",
- "target_build_utils",
+ "libc",
+ "opusic-sys",
+]
+
+[[package]]
+name = "opusic-sys"
+version = "0.3.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5eace752ce07a037241dba8f02c654799f051e431b27028056bcb480e83b54f5"
+dependencies = [
+ "cmake",
+ "libc",
 ]
 
 [[package]]
